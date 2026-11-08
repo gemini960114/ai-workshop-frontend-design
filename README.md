@@ -82,3 +82,22 @@ npx skills add anthropics/skills@frontend-design -a antigravity -a claude-code -
   在這個 Case 你使用了哪些 Skills
   ```
 
+---
+
+### 範例 2：做一個好玩的小遊戲（記憶翻牌）
+
+#### 任務 Prompt
+```text
+在目錄 example/case02/ 幫我用最簡單的 Vite + JS 做一個「記憶翻牌」遊戲：
+總共 16 張牌隨機排列，翻到相同的兩張就消除，上方顯示步數和計時。
+全部消除後顯示「恭喜完成」和「重新開始」按鈕，介面用繁體中文。
+做完後直接幫我把網頁跑起來，給我網址讓我可以點開玩。
+```
+
+- **預期行為**：Agent 會自動建立輕量的 Vite + JS 專案、撰寫洗牌與翻牌配對邏輯，完成後在背景啟動伺服器並提供本地網址（如 `http://localhost:5173`），讓學員能直接點擊在瀏覽器試玩。
+- **驗證觸發**：完成後追問下面這句，確認 agent 確實載入了 skill：
+  ```text
+  在這個 Case 你使用了哪些 Skills
+  ```
+
+
